@@ -1,0 +1,54 @@
+body {
+    background: gray;
+}
+
+#Btn {
+    background: pink;
+}
+
+.h1Title {
+    font-family: 'Exo 2', sans-serif;
+}
+.form-label {
+    font-family: 'Exo 2', sans-serif;
+}
+
+#navLogo {
+    color: black;
+    border: 1px solid white;
+    padding: 10px;
+    background-color:pink;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 5px;
+    
+}
+
+#mainNav {
+    background-color: black !important;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+#navFlex {
+    display: flex;
+    justify-content: center;
+}
+
+#mainSection {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30vh;
+    background-color: pink;
+}
+
+
+.output img{
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.output {
+    border-radius: 10px;
+    background: pink;
+}
