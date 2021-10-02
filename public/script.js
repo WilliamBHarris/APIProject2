@@ -10,7 +10,7 @@ function theFetch(){
     document.getElementById('Btn').addEventListener('click', dontRefresh => {
         dontRefresh.preventDefault();
 
-        let url = `https://api.giphy.com/v1/gifs/search?api_key=${myKey}&limit=25&q=`;
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=${myKey}&limit=24&q=`;
         let userInput = document.getElementById('search').value;
         url = url.concat(userInput);
         let output = document.querySelector('.output');
