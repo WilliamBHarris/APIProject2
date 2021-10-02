@@ -3,7 +3,8 @@ body {
 }
 
 #Btn {
-    background: pink;
+    background: black;
+    color: gray;
 }
 
 .h1Title {
@@ -39,16 +40,27 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     height: 30vh;
-    background-color: pink;
+    background-color: rgb(106, 83, 87);
+}
+
+#mainSection:hover {
+    background: lightgray;
+    transition: 5s;
 }
 
 
 .output img{
     border-radius: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .output {
+    text-align: center;
     border-radius: 10px;
-    background: pink;
+    background: rgb(106, 83, 87);
+}
+.output:hover {
+    background: lightgray;
+    transition: 5s;
 }
