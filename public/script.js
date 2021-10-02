@@ -1,5 +1,7 @@
 // API key from GIPHY
 const myKey = '0zsg4Sw12qD8t6wIVof6XymzwuawICwJ';
+const prevNav = document.querySelector('.prevNav');
+const nextNav = document.querySelector('.nextNav');
 
 // event listener to wait until the page is loaded
 document.addEventListener('DOMContentLoaded', theFetch);
@@ -8,15 +10,14 @@ function theFetch(){
     document.getElementById('Btn').addEventListener('click', dontRefresh => {
         dontRefresh.preventDefault();
 
-        let url = `https://api.giphy.com/v1/gifs/search?api_key=${myKey}&limit=48&q=`;
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=${myKey}&limit=25&q=`;
         let userInput = document.getElementById('search').value;
         url = url.concat(userInput);
         let output = document.querySelector('.output');
 
         fetch(url)
         .then(response => response.json() )
-        .then(images => {       
-            console.log(images);     
+        .then(images => {
             while(output.firstChild){
                 output.removeChild(output.firstChild);
             }
@@ -28,11 +29,10 @@ function theFetch(){
             let link = document.createElement('a');
 
             let imgLink = images.data[i].images.original.url;
-            let bigImage = imgLink;
-
             
+       
             img.src = images.data[i].images.fixed_width_small.url;
-            img.href = imgLink;  
+            img.href = '#' + imgLink;  
                   
             
             output.appendChild(link);

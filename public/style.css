@@ -45,7 +45,7 @@ body {
 
 #mainSection:hover {
     background: lightgray;
-    transition: 5s;
+    transition: .3s;
 }
 
 
@@ -62,5 +62,5 @@ body {
 }
 .output:hover {
     background: lightgray;
-    transition: 5s;
+    transition: .3s;
 }
